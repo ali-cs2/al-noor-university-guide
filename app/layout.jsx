@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body className="min-h-screen bg-university-gray text-slate-950 antialiased">
-        <Navbar universityName={universityData.university.name} />
+        <Navbar university={universityData.university} />
         <main className="min-h-[calc(100vh-210px)]">{children}</main>
         <Footer universityName={universityData.university.name} />
       </body>

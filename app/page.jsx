@@ -11,9 +11,18 @@ export default function HomePage() {
         <div className="academic-pattern absolute inset-0 opacity-40" />
         <div className="relative mx-auto grid min-h-[620px] max-w-7xl items-center gap-12 px-4 py-20 sm:px-6 lg:grid-cols-[1.1fr_0.9fr] lg:px-12">
           <div>
-            <p className="text-sm font-bold uppercase tracking-widest text-blue-200">
-              University Digital Guide
-            </p>
+            <div className="flex items-center gap-4">
+              {university.logo ? (
+                <img
+                  alt={`${university.name} logo`}
+                  className="size-16 rounded-full bg-white object-contain p-1 shadow-academic"
+                  src={university.logo}
+                />
+              ) : null}
+              <p className="text-sm font-bold uppercase tracking-widest text-blue-200">
+                University Digital Guide
+              </p>
+            </div>
             <h1 className="mt-4 text-4xl font-extrabold tracking-normal sm:text-5xl lg:text-6xl">
               {university.name}
             </h1>
