@@ -1,0 +1,18 @@
+{
+  "university": {
+    "name": "Al-Noor University",
+    "description": "A modern university guide for students, visitors, and applicants.",
+    "location": "Mosul, Iraq",
+    "website": ""
+  },
+  "colleges": [],
+  "departments": [],
+  "faqs": [],
+  "virtualTours": [],
+  "importantLinks": [],
+  "contact": {
+    "email": "",
+    "phone": "",
+    "address": ""
+  }
+}
