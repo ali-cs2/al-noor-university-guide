@@ -1,18 +1,305 @@
 {
   "university": {
     "name": "Al-Noor University",
-    "description": "A modern university guide for students, visitors, and applicants.",
+    "description": "Al-Noor University is the first private university in Nineveh Governorate, established in 2013. It aims to provide high-quality higher education that keeps pace with the developments of the era and meets the needs of the local and regional job market. The university seeks to be a distinguished academic center that combines education, scientific research, and community service.",
     "location": "Mosul, Iraq",
-    "website": ""
+    "website": "https://alnoor.edu.iq",
+    "established": 2013,
+    "founded_in": "Nineveh Governorate",
+    "colleges_count": 11,
+    "departments_count": 44
   },
-  "colleges": [],
-  "departments": [],
-  "faqs": [],
+  "colleges": [
+    {
+      "id": "college-pharmacy",
+      "name": "College of Pharmacy",
+      "name_ar": "كلية الصيدلة",
+      "description": "Offers pharmaceutical education and training"
+    },
+    {
+      "id": "college-dentistry",
+      "name": "College of Dentistry",
+      "name_ar": "كلية طب الأسنان",
+      "description": "Provides dental education with 115 dental chairs in teaching clinics offering free treatment services for over 250 patients daily"
+    },
+    {
+      "id": "college-medical-technologies",
+      "name": "College of Medical and Health Technologies",
+      "name_ar": "كلية التقنيات الصحية والطبية",
+      "description": "Includes departments: Medical Laboratory Techniques, Anesthesia Techniques, Radiography Techniques, Optical Techniques, Dental Prosthetics Techniques"
+    },
+    {
+      "id": "college-engineering",
+      "name": "College of Engineering",
+      "name_ar": "كلية الهندسة",
+      "description": "Includes departments: Petroleum Engineering, Building Engineering and Project Management"
+    },
+    {
+      "id": "college-law",
+      "name": "College of Law",
+      "name_ar": "كلية القانون",
+      "description": "Provides legal education and training for students"
+    },
+    {
+      "id": "college-education",
+      "name": "College of Education",
+      "name_ar": "كلية التربية",
+      "description": "Includes departments: Physical Education and Sports Science, English Language, Arabic Language"
+    },
+    {
+      "id": "college-arts",
+      "name": "College of Arts",
+      "name_ar": "كلية الآداب",
+      "description": "Offers humanities education including translation and digital media"
+    },
+    {
+      "id": "college-science",
+      "name": "College of Science",
+      "name_ar": "كلية العلوم",
+      "description": "Provides science education and research"
+    },
+    {
+      "id": "college-engineering-technologies",
+      "name": "College of Engineering Technologies",
+      "name_ar": "كلية التقنيات الهندسية",
+      "description": "Offers technical engineering programs"
+    },
+    {
+      "id": "college-administrative-technologies",
+      "name": "College of Administrative Technologies",
+      "name_ar": "كلية التقنيات الإدارية",
+      "description": "Provides administrative and management training"
+    },
+    {
+      "id": "college-applied-arts",
+      "name": "College of Applied Arts",
+      "name_ar": "كلية الفنون التطبيقية",
+      "description": "Offers applied arts and design programs"
+    }
+  ],
+  "departments": [
+    {
+      "id": "dept-pharmacy",
+      "name": "Pharmacy",
+      "collegeId": "college-pharmacy",
+      "link": "https://alnoor.edu.iq/ar/pharmacy/"
+    },
+    {
+      "id": "dept-dentistry",
+      "name": "Dentistry",
+      "collegeId": "college-dentistry",
+      "link": "https://alnoor.edu.iq/ar/dentistry/"
+    },
+    {
+      "id": "dept-medical-lab-techniques",
+      "name": "Medical Laboratory Techniques",
+      "collegeId": "college-medical-technologies",
+      "link": "https://alnoor.edu.iq/ar/medical-lab-techniques/"
+    },
+    {
+      "id": "dept-anesthesia-techniques",
+      "name": "Anesthesia Techniques",
+      "collegeId": "college-medical-technologies",
+      "link": "https://alnoor.edu.iq/ar/anesthesia-techniques/"
+    },
+    {
+      "id": "dept-radiography-techniques",
+      "name": "Radiography Techniques",
+      "collegeId": "college-medical-technologies",
+      "link": "https://alnoor.edu.iq/ar/radiography-techniques/"
+    },
+    {
+      "id": "dept-optical-techniques",
+      "name": "Optical Techniques",
+      "collegeId": "college-medical-technologies",
+      "link": "https://alnoor.edu.iq/ar/optical-techniques/"
+    },
+    {
+      "id": "dept-dental-prosthetics",
+      "name": "Dental Prosthetics Techniques",
+      "collegeId": "college-medical-technologies",
+      "link": "https://alnoor.edu.iq/ar/dental-prosthetics/"
+    },
+    {
+      "id": "dept-petroleum-engineering",
+      "name": "Petroleum Engineering",
+      "collegeId": "college-engineering",
+      "link": "https://alnoor.edu.iq/ar/petroleum-engineering/"
+    },
+    {
+      "id": "dept-building-engineering",
+      "name": "Building Engineering and Project Management",
+      "collegeId": "college-engineering",
+      "link": "https://alnoor.edu.iq/ar/building-engineering/"
+    },
+    {
+      "id": "dept-law",
+      "name": "Law",
+      "collegeId": "college-law",
+      "link": "https://alnoor.edu.iq/ar/law/"
+    },
+    {
+      "id": "dept-physical-education",
+      "name": "Physical Education and Sports Science",
+      "collegeId": "college-education",
+      "link": "https://alnoor.edu.iq/ar/physical-education/"
+    },
+    {
+      "id": "dept-english-language",
+      "name": "English Language",
+      "collegeId": "college-education",
+      "link": "https://alnoor.edu.iq/ar/english-language/"
+    },
+    {
+      "id": "dept-arabic-language",
+      "name": "Arabic Language",
+      "collegeId": "college-education",
+      "link": "https://alnoor.edu.iq/ar/arabic-language/"
+    },
+    {
+      "id": "dept-translation",
+      "name": "Translation",
+      "collegeId": "college-arts",
+      "link": "https://alnoor.edu.iq/ar/translation/"
+    },
+    {
+      "id": "dept-digital-media",
+      "name": "Digital Media",
+      "collegeId": "college-arts",
+      "link": "https://alnoor.edu.iq/ar/digital-media/"
+    }
+  ],
+  "faqs": [
+    {
+      "id": "faq-admission-requirements",
+      "question": "What are the general admission requirements?",
+      "answer": "To be admitted to Al-Noor University, applicants must: (1) Hold an Iraqi preparatory school certificate or equivalent, endorsed by the Ministry of Education; (2) Be born in 1995 or later for morning studies, or 1994 or later for evening studies; (3) Pass a medical examination according to the university's requirements; (4) Be available for full-time study (cannot combine employment with studies); (5) Meet the specific entry requirements for the desired specialization."
+    },
+    {
+      "id": "faq-registration-documents",
+      "question": "What documents are required for registration?",
+      "answer": "For registration at Al-Noor University, students must provide: (1) Original preparatory school certificate endorsed by the Directorate of Education; (2) Certified copy of national ID or unified national card; (3) Recent passport-sized photos (3 copies); (4) Medical examination form completed according to health fitness standards; (5) Declaration that the student has not been dismissed from another university for cheating or academic misconduct."
+    },
+    {
+      "id": "faq-morning-study-conditions",
+      "question": "What are the specific conditions for morning studies?",
+      "answer": "For morning study programs: (1) Applicants must be born in 1994 or later; (2) Applicants with 90% average and born in 1990 may apply; (3) Students must be available for full-time study; (4) Cannot combine government employment with studies; (5) Cannot combine two study programs simultaneously; (6) Students registered in government universities may also apply to private universities; (7) Students from Kurdistan Region with recognized preparatory certificates may apply."
+    },
+    {
+      "id": "faq-evening-study-conditions",
+      "question": "What are the specific conditions for evening studies?",
+      "answer": "For evening study programs: (1) Applicants must hold an Iraqi preparatory school certificate or equivalent; (2) Cannot be admitted to another study program simultaneously; (3) Must pass medical examination requirements; (4) Follows the same academic calendar as morning studies; (5) Designed for working professionals and those preferring evening classes."
+    },
+    {
+      "id": "faq-scholarships-available",
+      "question": "What scholarship opportunities are available?",
+      "answer": "Al-Noor University offers several scholarship programs: (1) ADRES Scholarship - free scholarships for non-Iraqi students from 15 countries with 3 seats per specialization; (2) Medical Group Free Scholarship - for students with 96%+ grades to apply for 10 different choices, or 93%+ for 6 choices; (3) Martyrs' Relatives Channel - 50% tuition discount for families of martyrs; (4) Special Admission Channels - discounted tuition and reduced admission requirements for qualifying groups."
+    },
+    {
+      "id": "faq-admission-channels",
+      "question": "What are the different admission channels available?",
+      "answer": "Al-Noor University offers multiple admission channels: (1) General Channel - competitive admission based on academic merit; (2) Martyrs' Relatives - for families of martyrs and security force members with reduced requirements; (3) Free Scholarship - for high-performing students (medical group); (4) Distinguished School Graduates - for graduates of premier schools; (5) ADRES Scholarship - for international students; (6) Special Admission Channels - various programs with specific criteria."
+    },
+    {
+      "id": "faq-payment-installments",
+      "question": "How are tuition payments structured?",
+      "answer": "Tuition at Al-Noor University is paid in four quarterly installments throughout the academic year. Payment is processed through the university's accounting department using electronic payment systems. Students can request tuition reduction by submitting a written request to the president's office explaining their circumstances. Reduction requests are reviewed by the designated committee based on established criteria."
+    },
+    {
+      "id": "faq-career-services",
+      "question": "What career services and employment support does the university provide?",
+      "answer": "Al-Noor University offers comprehensive career services through its Employment and Professional Development Department: (1) Career development planning based on students' skills and interests; (2) Resume and interview preparation; (3) Job placement assistance; (4) Partnership with employers to identify job opportunities; (5) Alumni network and continuous career support for graduates; (6) Professional training workshops; (7) Internship and cooperative education programs."
+    }
+  ],
   "virtualTours": [],
-  "importantLinks": [],
+  "importantLinks": [
+    {
+      "id": "link-admission-instructions",
+      "title": "Admission Instructions and Requirements",
+      "url": "https://alnoor.edu.iq/ar/instructions-and-requirements-for-applying-to-al-nour-university/",
+      "category": "Admission"
+    },
+    {
+      "id": "link-registration-mechanism",
+      "title": "Registration Mechanism at Al-Noor University",
+      "url": "https://alnoor.edu.iq/ar/registration-mechanism-at-al-nour-university/",
+      "category": "Admission"
+    },
+    {
+      "id": "link-morning-study-conditions",
+      "title": "Conditions for Morning Studies",
+      "url": "https://alnoor.edu.iq/ar/conditions-for-applying-for-the-morning-study/",
+      "category": "Admission"
+    },
+    {
+      "id": "link-evening-study-conditions",
+      "title": "Conditions for Evening Studies",
+      "url": "https://alnoor.edu.iq/ar/conditions-for-applying-for-evening-studies/",
+      "category": "Admission"
+    },
+    {
+      "id": "link-scholarship-adres",
+      "title": "ADRES Scholarship",
+      "url": "https://alnoor.edu.iq/ar/scholarship/",
+      "category": "Scholarships"
+    },
+    {
+      "id": "link-free-scholarship-medical",
+      "title": "Free Scholarship for Medical Group Admission",
+      "url": "https://alnoor.edu.iq/ar/mechanism-and-controls-for-applying-for-the-free-scholarship-for-admission-into-the-medical-group/",
+      "category": "Scholarships"
+    },
+    {
+      "id": "link-general-admission-conditions",
+      "title": "General Admission Conditions",
+      "url": "https://alnoor.edu.iq/ar/general-conditions-for-admission-for-the-academic-year/",
+      "category": "Admission"
+    },
+    {
+      "id": "link-university-structure",
+      "title": "University Structure and Colleges",
+      "url": "https://alnoor.edu.iq/ar/structure-of-al-nour-university/",
+      "category": "About"
+    },
+    {
+      "id": "link-employment-placement",
+      "title": "Career Services and Employment",
+      "url": "https://alnoor.edu.iq/ar/hiringdivision/",
+      "category": "Career"
+    },
+    {
+      "id": "link-library",
+      "title": "University Library",
+      "url": "https://alnoor.edu.iq/ar/library/",
+      "category": "Resources"
+    },
+    {
+      "id": "link-e-learning",
+      "title": "E-Learning Platform",
+      "url": "https://alnoor.edu.iq/ar/e-learning/",
+      "category": "Learning"
+    },
+    {
+      "id": "link-student-activities",
+      "title": "Student Activities and Events",
+      "url": "https://alnoor.edu.iq/ar/student-activities/",
+      "category": "Student Life"
+    },
+    {
+      "id": "link-related-sites",
+      "title": "Related Websites and Links",
+      "url": "https://alnoor.edu.iq/ar/related-info/",
+      "category": "External"
+    }
+  ],
   "contact": {
-    "email": "",
-    "phone": "",
-    "address": ""
+    "email": "registration@alnoor.edu.iq",
+    "phone": "07708933633",
+    "address": "Mosul, Nineveh, Iraq",
+    "website": "https://alnoor.edu.iq",
+    "social_media": {
+      "youtube": "ALNOOR YOUTUBE",
+      "elearning": "ALNOOR E-LEARNING CHANNEL"
+    }
   }
 }
