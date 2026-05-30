@@ -1,30 +1,19 @@
-import DepartmentCard from "@/components/DepartmentCard";
-import SectionHeader from "@/components/SectionHeader";
+import DepartmentDirectory from "@/components/DepartmentDirectory";
+import PageHero from "@/components/PageHero";
 import universityData from "@/data/university.json";
 
 export default function DepartmentsPage() {
   const { departments } = universityData;
 
   return (
-    <section className="space-y-6">
-      <SectionHeader
+    <div>
+      <PageHero
         title="Departments"
         description="Browse departments once academic content is added."
       />
-      {departments.length > 0 ? (
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {departments.map((department) => (
-            <DepartmentCard
-              key={department.id || department.name}
-              department={department}
-            />
-          ))}
-        </div>
-      ) : (
-        <p className="rounded-lg bg-white p-6 text-slate-600 shadow-sm ring-1 ring-slate-200">
-          Content will be added soon.
-        </p>
-      )}
-    </section>
+      <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-12">
+        <DepartmentDirectory departments={departments} />
+      </section>
+    </div>
   );
 }

@@ -13,15 +13,18 @@ const links = [
 
 export default function Navbar({ universityName }) {
   return (
-    <header className="border-b border-slate-200 bg-white">
-      <nav className="mx-auto flex max-w-6xl flex-col gap-4 px-4 py-4 sm:px-6 lg:px-8">
-        <Link className="text-lg font-bold text-university-blue" href="/">
-          {universityName}
+    <header className="sticky top-0 z-50 border-b border-university-blueGray bg-white shadow-sm">
+      <nav className="mx-auto flex max-w-7xl flex-col gap-4 px-4 py-4 sm:px-6 lg:flex-row lg:items-center lg:justify-between lg:px-12">
+        <Link className="flex items-center gap-3 text-lg font-extrabold text-university-navy" href="/">
+          <span className="flex size-10 items-center justify-center rounded bg-university-navy text-white">
+            <span className="material-symbols-outlined text-[22px]">school</span>
+          </span>
+          <span>{universityName}</span>
         </Link>
-        <div className="flex flex-wrap gap-2 text-sm font-medium text-slate-600">
+        <div className="flex flex-wrap gap-1 text-sm font-semibold text-slate-600">
           {links.map((link) => (
             <Link
-              className="rounded-md px-3 py-2 transition hover:bg-university-gray hover:text-university-blue"
+              className="rounded px-3 py-2 transition hover:bg-university-gray hover:text-university-navy focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-university-royal"
               href={link.href}
               key={link.href}
             >
@@ -29,6 +32,12 @@ export default function Navbar({ universityName }) {
             </Link>
           ))}
         </div>
+        <Link
+          className="hidden rounded bg-university-burgundy px-5 py-2 text-sm font-bold text-white transition hover:opacity-90 lg:inline-flex"
+          href="/colleges"
+        >
+          Explore Guide
+        </Link>
       </nav>
     </header>
   );
