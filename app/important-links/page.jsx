@@ -1,27 +1,28 @@
+import EmptyState from "@/components/EmptyState";
 import ImportantLinkCard from "@/components/ImportantLinkCard";
-import SectionHeader from "@/components/SectionHeader";
+import PageHero from "@/components/PageHero";
 import universityData from "@/data/university.json";
 
 export default function ImportantLinksPage() {
   const { importantLinks } = universityData;
 
   return (
-    <section className="space-y-6">
-      <SectionHeader
+    <div>
+      <PageHero
         title="Important Links"
         description="External university links will be organized here."
       />
-      {importantLinks.length > 0 ? (
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {importantLinks.map((link) => (
-            <ImportantLinkCard key={link.id || link.title} link={link} />
-          ))}
-        </div>
-      ) : (
-        <p className="rounded-lg bg-white p-6 text-slate-600 shadow-sm ring-1 ring-slate-200">
-          Content will be added soon.
-        </p>
-      )}
-    </section>
+      <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-12">
+        {importantLinks.length > 0 ? (
+          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            {importantLinks.map((link) => (
+              <ImportantLinkCard key={link.id || link.title} link={link} />
+            ))}
+          </div>
+        ) : (
+          <EmptyState />
+        )}
+      </section>
+    </div>
   );
 }

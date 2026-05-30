@@ -11,11 +11,17 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="min-h-screen bg-university-gray text-slate-900">
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+          rel="stylesheet"
+        />
+      </head>
+      <body className="min-h-screen bg-university-gray text-slate-950 antialiased">
         <Navbar universityName={universityData.university.name} />
-        <main className="mx-auto min-h-[calc(100vh-180px)] w-full max-w-6xl px-4 py-8 sm:px-6 lg:px-8">
-          {children}
-        </main>
+        <main className="min-h-[calc(100vh-210px)]">{children}</main>
         <Footer universityName={universityData.university.name} />
       </body>
     </html>
