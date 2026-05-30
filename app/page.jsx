@@ -5,7 +5,7 @@ export default function HomePage() {
   const { university } = universityData;
 
   return (
-    <div className="space-y-8">
+    <main className="space-y-8">
       <section className="rounded-lg bg-white p-6 shadow-sm ring-1 ring-slate-200 sm:p-8">
         <p className="text-sm font-semibold uppercase tracking-wide text-university-gold">
           University Guide
@@ -27,6 +27,6 @@ export default function HomePage() {
           description="This initial structure is ready for content and the final Stitch design later."
         />
       </section>
-    </div>
+    </main>
   );
 }
